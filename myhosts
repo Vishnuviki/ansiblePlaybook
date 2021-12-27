@@ -9,3 +9,10 @@
 [myDBServers]
 172.31.33.20
 172.31.33.21
+
+
+[myWebServers:vars]
+key=value
+myUbuntuWebPack=apache222222
+gitWebPack=git
+state=present

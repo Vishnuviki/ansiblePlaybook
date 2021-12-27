@@ -4,13 +4,13 @@
   tasks:
   - name: install webserver apache2
     apt:
-      name: apache2
-      state: present
+      name: {{myUbuntuWebPack}}
+      state: {{state}}
   
   - name: install git on webserver
     apt:
-      name: git
-      state: present
+      name: {{gitWebPack}}
+      state: {{state}}
 
 # to start a service
   - name: I want to start webserver
