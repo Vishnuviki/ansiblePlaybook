@@ -13,6 +13,6 @@
 
 [myWebServers:vars]
 key=value
-myUbuntuWebPack=apache222222
+myUbuntuWebPack=apache2
 gitWebPack=git
 state=present
