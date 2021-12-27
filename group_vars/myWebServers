@@ -4,5 +4,5 @@ myUbuntuWebPack: apache2
 gitWebPack: git
 state: present
 
-myJavaPackonUbuntu: openjdk-10-jdk
+myJavaPackonUbuntu: openjdk-9-jre
 myJavaPackonRedHat: java-1.8.0-openjdk
