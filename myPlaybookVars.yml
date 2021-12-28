@@ -1,0 +1,11 @@
+---
+- hosts: 
+  become: yes
+  vars:
+    var01: git
+    var02: present
+
+  tasks: 
+  - name: I want to display var01
+    debug:
+      msg: "{{var01}}"
