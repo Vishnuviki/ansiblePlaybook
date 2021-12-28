@@ -2,18 +2,13 @@
 - hosts: 172.31.38.63
   become: yes
   tasks: 
-  - name: I want to execute linux command
-    command: hostname -f
-    register: myOut
-
   - name: I want to install git
     apt:
       name: git
       state: present
-    when: myOut.stderr == ""
+   
   
   - name: I want to install tree 
     apt: 
       name: tree 
       state: present 
-    when: myOut.stderr != ""
