@@ -6,6 +6,14 @@
     command: hostname -f
     register: myOut
 
-  - name: display result
-    debug: 
-      msg: "{{myOut}}"
+  - name: I want to install git
+    apt:
+      name: git
+      state: present
+    when: myOut.stderr == ""
+  
+  - name: I want to install tree 
+    apt: 
+      name: tree 
+      state: present 
+    when: myOut.stderr != ""
