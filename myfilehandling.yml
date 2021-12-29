@@ -4,5 +4,5 @@
   tasks:
   - name: I want to create a file on node side 
     file: 
-      src: /home/ubuntu/testfile
+      path: /home/ubuntu/testfile
       state: touch 
