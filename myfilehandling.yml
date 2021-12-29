@@ -9,7 +9,7 @@
 
   - include_tasks: myfile.yml
 
-  - name:
+  - name: I want to copy index file into node side
     template:
       src: myindex.j2
       dest: /var/www/html/index.html
