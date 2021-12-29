@@ -1,0 +1,8 @@
+---
+- hosts: 172.31.40.246 
+  become: yes
+  tasks:
+  - name: I want to create a file on node side 
+    file: 
+      src: /home/ubuntu/testfile
+      state: touch 
