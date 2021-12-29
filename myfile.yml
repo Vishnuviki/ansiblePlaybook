@@ -4,7 +4,7 @@
     path: /home/ubuntu/folderone
     state: directory
 
-- name: 
+- name: I want to create a file
   file:
     path: /home/ubuntu/folderone/fileone
     state: touch
