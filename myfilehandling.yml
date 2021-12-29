@@ -9,6 +9,7 @@
 
   - include_tasks: myfile.yml
 
-  # OR we can use import_tasks
-  
-  # - import_tasks: myfile.yml
+  - name:
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html
