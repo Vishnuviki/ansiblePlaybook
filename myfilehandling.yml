@@ -6,3 +6,9 @@
     file: 
       path: /home/ubuntu/testfile
       state: touch 
+
+  - include_tasks: myfile.yml
+
+  # OR we can use import_tasks
+  
+  # - import_tasks: myfile.yml

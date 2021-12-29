@@ -1,0 +1,10 @@
+--- 
+- name: I want to create a folder
+  file:
+    path: /home/ubuntu/folderone
+    state: directory
+
+- name: 
+  file:
+    path: /home/ubuntu/folderone/fileone
+    state: touch
