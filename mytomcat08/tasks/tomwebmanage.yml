@@ -1,0 +1,15 @@
+--- 
+- name: Add a login to our Tomcat server
+  template:
+    src: templates/tomcat-users.j2
+    dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: Restrict access to the Manager app 
+  template: 
+    src: templates/manager-cxt.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml 
+
+- name: Restrict access to the Host-Manager app 
+  template: 
+    src: templates/host-manager-cxt.j2
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml

@@ -15,4 +15,4 @@
     cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
     creates: /opt/tomcat/LICENSE # according to this file, ansible will skip this task
 
-# creates: keyword helps to skip the task accordin to the file existence.
+# creates: keyword helps to skip the task according to the file existence.

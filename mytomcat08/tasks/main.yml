@@ -6,5 +6,7 @@
 - include_tasks: tomsysfile.yml
 - include_tasks: tomstart.yml
 - include_tasks: tomwebmanage.yml
+- include_tasks: deployapp.yml
+- include_tasks: tomrestart.yml
 
 
