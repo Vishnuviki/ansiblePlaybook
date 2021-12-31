@@ -13,6 +13,8 @@
 - name: extract the tar file
   command:
     cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
-    creates: /opt/tomcat/LICENSE # according to this file, ansible will skip this task
+    creates: /opt/tomcat/LICENSE # according to this file 'LISCENSE', ansible will skip this task
 
 # creates: keyword helps to skip the task according to the file existence.
+# To acheive idempotence while executing linux command, and it is
+# the developer responsibility to maintain the idempotence while using linux commands.
